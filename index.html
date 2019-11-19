@@ -161,15 +161,23 @@ Error message and password prompt
 
 <li>$:/languages/zh-Hans</li>
 
+<li>$:/palette</li>
+
 <li>$:/plugins/tiddlywiki/googleanalytics</li>
 
 <li>$:/plugins/tiddlywiki/highlight</li>
 
 <li>$:/plugins/tiddlywiki/markdown</li>
 
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/tight</li>
+
 <li>$:/state/plugin-info--1529721954-$:/plugins/tiddlywiki/googleanalytics---1403365463</li>
 
 <li>$:/state/plugin-info--1893909122-$:/plugins/tiddlywiki/highlight---1375639774</li>
+
+<li>$:/state/ShowPaletteEditor</li>
+
+<li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab-1163638994</li>
 
@@ -182,6 +190,8 @@ Error message and password prompt
 <li>$:/state/tab/moresidebar-1850697562</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
+
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/StoryList</li>
 
@@ -381,9 +391,17 @@ Error message and password prompt
 
 <li>$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html</li>
 
+<li>$:/theme</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
+
+<li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
+
+<li>$:/view</li>
 
 </ul>
 </p>
@@ -13258,6 +13276,9 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20191119080524941" modified="20191119080637255" title="$:/palette">
+<pre>$:/palettes/Blanca</pre>
+</div>
 <div author="JeremyRuston" contributor="Sylvain Comte" core-version="&gt;=5.0.0" dependents="" description="Google Analytics: website statistics" list="readme settings usage" plugin-type="plugin" title="$:/plugins/tiddlywiki/googleanalytics" type="application/json" version="5.1.21">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -13533,19 +13554,28 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20191119080328824" modified="20191119080328824" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/tight">
+<pre>yes</pre>
+</div>
 <div created="20191119080116502" modified="20191119080127979" title="$:/state/plugin-info--1529721954-$:/plugins/tiddlywiki/googleanalytics---1403365463">
 <pre>settings</pre>
 </div>
 <div created="20191119061505566" modified="20191119061506319" title="$:/state/plugin-info--1893909122-$:/plugins/tiddlywiki/highlight---1375639774">
 <pre>howto</pre>
 </div>
-<div created="20191119075526655" modified="20191119075527266" title="$:/state/tab-1163638994">
+<div created="20191119080623155" modified="20191119080623155" title="$:/state/ShowPaletteEditor">
+<pre>yes</pre>
+</div>
+<div created="20191119080453903" modified="20191119080620721" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Palette</pre>
+</div>
+<div created="20191119075526655" modified="20191119080311118" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Plugins</pre>
 </div>
-<div created="20191119075536359" modified="20191119075545164" title="$:/state/tab-1342078386">
-<pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
+<div created="20191119075536359" modified="20191119080319208" title="$:/state/tab-1342078386">
+<pre>$:/core/ui/ControlPanel/Plugins/Add/Themes</pre>
 </div>
-<div created="20191119055932567" modified="20191119061207507" title="$:/state/tab-1749438307">
+<div created="20191119055932567" modified="20191119080645490" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20191119060747188" modified="20191119060747188" title="$:/state/tab-2065006209">
@@ -13554,10 +13584,13 @@ Error message and password prompt
 <div created="20191119061205963" modified="20191119061205963" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20191119055929171" modified="20191119061204424" title="$:/state/tab/sidebar--595412856">
+<div created="20191119055929171" modified="20191119080520114" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
-<div created="20191119080111997" list="$:/plugins/tiddlywiki/googleanalytics GettingStarted" modified="20191119080111997" title="$:/StoryList">
+<div created="20191119080546324" modified="20191119080547343" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
+</div>
+<div created="20191119080111997" list="$:/ControlPanel $:/plugins/tiddlywiki/googleanalytics GettingStarted" modified="20191119080316360" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -14374,11 +14407,14 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20191119061209785" dependents="" description="Basic theme" modified="20191119061209785" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20191119061211194" modified="20191119075559377" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
-<pre>google</pre>
+<div created="20191119061211194" modified="20191119080320617" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
+<pre></pre>
 </div>
 <div created="20191119075602637" modified="20191119075602637" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
 <pre>loaded</pre>
+</div>
+<div created="20191119080444819" modified="20191119080452087" title="$:/theme">
+<pre>$:/themes/tiddlywiki/vanilla</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.21">
 <pre>{
@@ -14488,6 +14524,15 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
         }
     }
 }</pre>
+</div>
+<div created="20191119080550141" modified="20191119080555651" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
+<pre>fluid-fixed</pre>
+</div>
+<div created="20191119080602216" modified="20191119080602216" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
+<pre>yes</pre>
+</div>
+<div created="20191119080455546" modified="20191119080524086" title="$:/view">
+<pre>classic</pre>
 </div>
 
 </div>
